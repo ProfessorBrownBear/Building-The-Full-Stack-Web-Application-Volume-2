@@ -1,4 +1,5 @@
-Below are the code segments corresponding to the chapters and sections of the book. You can copy and paste these into your GitHub repository, and students can refer to these examples as they work through the lessons.
+Below are the code segments corresponding to the chapters and sections of the book. You can copy and paste these into your GitHub repository,
+and students can refer to these examples as they work through the lessons.
 
 Chapter 2: HTML and Document Object Model (DOM)
 
@@ -59,20 +60,18 @@ const server = http.createServer((req, res) => {
 server.listen(3000, () => {
   console.log('Server running on http://localhost:3000/');
 });
+
+
 Section: Mongoose and MongoDB
 Connecting to MongoDB and Creating a Schema:
-javascript
-Copy code
+
 const mongoose = require('mongoose');
-
 mongoose.connect('mongodb://localhost/mydatabase', { useNewUrlParser: true });
-
 const userSchema = new mongoose.Schema({
   name: String,
   email: String,
   password: String
 });
-
 const User = mongoose.model('User', userSchema);
 
 
