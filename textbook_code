@@ -46,8 +46,8 @@ Chapter 4: Node.js and MongoDB
 
 Section: Introduction to Node.js
 Creating a Simple Node.js Server:
-javascript
-Copy code
+
+
 const http = require('http');
 
 const server = http.createServer((req, res) => {
